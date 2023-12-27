@@ -76,8 +76,11 @@ $displayName = new DisplayName();
 $new = new GetbookAdapter($getbook, $displayName);
 
 // Calling the testing function with the $new object
-$result = testing($new);
-// $result = bookGet($new);
+$abc = 1;
+if($abc===1){
+    $result = testing($new);
+}
+else $result = bookGet($new);
 
 // Output the result
 echo $result;
